@@ -3,7 +3,7 @@
 
 ## 만들어볼 내용 - 스프링 게시판
 
-> 1. 필요한것 : 프론트엔드(부트스트랩) , 백엔드(SpringBoot) , DB(MySQL)
+> 1. 필요한것 : 프론트엔드(부트스트랩) , 백엔드(SpringBoot) , DB(MySQL),Insomnia(API테스트툴)
 > 2. 해야될 일 :
 >   - [1. 스프링부트 프로젝트 설정하기 (.yml 야믈파일 설정)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/1%EB%B2%88)
 >   - [2. MySQL 서버와 관련된 yml파일 설정완료 및  Hello World 찍어보기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/2%EB%B2%88)
@@ -20,3 +20,6 @@
 |5. User 엔티티 클래스 추가 및 User Repository 추가  - 9월 12일 | maven에 jpa 레포지토리가 작성이 안돼있어서 처음에 계속 jpa가 안불러와져서 당황했음 메이븐에 의존성 추가
 |*|AutoWired userRepository DI 주입이 안돼서 당황함 , 이것도 해결|
 |6. MySQL과 스프링부트 연동해서 테이블 생성되는지 확인,그리고 3번에 해당하는 설명 일부 작성  - 9월 13일 | 설명은 계속 작성 예정 |
+|중간에 DB 테이블이 작성이 안되는 오류가 생겨서 다 밀고 다시 시작함|*|
+|7. testController에서 jpa 테스트용 API 일부 작성 - 9월 14일 | 조회용 API 작성 |
+|*|DB 유저에 CreationTimestamp 어노테이션 추가해서 시간 표시|

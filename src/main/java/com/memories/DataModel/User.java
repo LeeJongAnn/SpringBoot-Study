@@ -4,8 +4,10 @@ package com.memories.DataModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Entity
 public class User {
@@ -22,6 +24,17 @@ public class User {
 
     @Column(nullable = false,length = 64)
     private String email;
+
+    public Timestamp getCreateTimestamp() {
+        return createTimestamp;
+    }
+
+    public void setCreateTimestamp(Timestamp createTimestamp) {
+        this.createTimestamp = createTimestamp;
+    }
+
+    @CreationTimestamp
+    private Timestamp createTimestamp;
 
     public int getId() {
         return id;
