@@ -42,7 +42,7 @@ ID,Email,Password,username등등이 들어가 있는것을 확인할 수 있다.
 ### 다음 시간에는 테이블을 더 생성하고 테스트 해보는 작업을 진행해보겠다.
 
 ***
-package com.memories.DataModel;
+`package com.memories.DataModel;
 
 
 import lombok.AllArgsConstructor;
@@ -99,5 +99,5 @@ public class User {
         this.email = email;
     }
 }
-
+`
 ***
