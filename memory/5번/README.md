@@ -3,7 +3,6 @@
 - Insomnia라는 API테스트 툴을 사용해서 작성한 API를 테스트할 것이다.
 
 
-`
 
     @PostMapping("/dummyTest") // 저장하는 메소드
     public String save(User user){
@@ -13,7 +12,7 @@
 
         userRepository.save(user);
         return "저장되었습니다."; }
-`
+
 - POST 요청을 보내는 메소드로 사용자의 이름과 패스워드 이메일을 DB에 저장해준다.
 - 그리고 반환값이 String이기 때문에 리턴값 역시 "저장되었습니다" 라는 문자열을 사용했다.
 ***
@@ -35,3 +34,19 @@
 
 
 ![img_6.png](img_6.png)
+
+
+![img_7.png](img_7.png)
+
+
+![img_8.png](img_8.png)
+ 
+변경하기 전에 내용은 이와 같고 인섬니아로 변경 후에는 아래와 같다. 
+
+![img_10.png](img_10.png)
+ 
+변경하는 모습 ,수정은 Put으로 해준다.
+
+![img_9.png](img_9.png)
+
+ 변경 후 이와 같다.

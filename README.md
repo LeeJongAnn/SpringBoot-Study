@@ -23,4 +23,4 @@
 |6. MySQL과 스프링부트 연동해서 테이블 생성되는지 확인,그리고 3번에 해당하는 설명 일부 작성  - 9월 13일 | 설명은 계속 작성 예정 |
 |중간에 DB 테이블이 작성이 안되는 오류가 생겨서 다 밀고 다시 시작함|*|
 |7. testController에서 jpa 테스트용 API 일부 작성 - 9월 14일 | 조회용 API 작성,DB 유저에 CreationTimestamp 어노테이션 추가해서 시간 표시 |
-|8. testController API테스트 및 작성 - 9월 15일 |save테스트 및 id로 select 테스트, 전체 조회 및 페이지 조회 테스트|
+|8. testController API테스트 및 작성 - 9월 15일 | save테스트 및 id로 select 테스트, 전체 조회 및 페이지 조회 테스트, update 테스트|
