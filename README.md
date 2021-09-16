@@ -3,7 +3,7 @@
 
 ## 만들어볼 내용 - 스프링 게시판
 
-> 1. 필요한것 : 프론트엔드(부트스트랩) , 백엔드(SpringBoot) , DB(MySQL),Insomnia(API테스트툴)
+> 1. 사용기술 : 프론트엔드(부트스트랩) , 백엔드(SpringBoot,Spring-Sequrity,RestAPI) , DB(MySQL),Insomnia(API테스트툴)
 > 2. 해야될 일 :
 >   - [1. 스프링부트 프로젝트 설정하기 (.yml 야믈파일 설정)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/1%EB%B2%88)
 >   - [2. MySQL 서버와 관련된 yml파일 설정완료 및  Hello World 찍어보기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/2%EB%B2%88)
@@ -11,6 +11,7 @@
 >   - [4. MySQL 테이블 생성하기](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/4%EB%B2%88/README.md)
 >   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
 >   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/5%EB%B2%88)
+>   - [7. 로그인,회원가입 기능 만들기]()
 
 |작성내용|비고|
 |------|---|
@@ -24,3 +25,4 @@
 |중간에 DB 테이블이 작성이 안되는 오류가 생겨서 다 밀고 다시 시작함|*|
 |7. testController에서 jpa 테스트용 API 일부 작성 - 9월 14일 | 조회용 API 작성,DB 유저에 CreationTimestamp 어노테이션 추가해서 시간 표시 |
 |8. testController API테스트 및 작성 - 9월 15일 | save테스트 및 id로 select 테스트, 전체 조회 및 페이지 조회 테스트, update 테스트|
+|9. board,Role 엔티티 추가 - 9월 15일 | enum 타입에 대해서 복습하기,그리고 연관관계 맵핑에 대해서 공부하기|
