@@ -25,4 +25,4 @@
 |중간에 DB 테이블이 작성이 안되는 오류가 생겨서 다 밀고 다시 시작함|*|
 |7. testController에서 jpa 테스트용 API 일부 작성 - 9월 14일 | 조회용 API 작성,DB 유저에 CreationTimestamp 어노테이션 추가해서 시간 표시 |
 |8. testController API테스트 및 작성 - 9월 15일 | save테스트 및 id로 select 테스트, 전체 조회 및 페이지 조회 테스트, update 테스트|
-|9. board,Role 엔티티 추가 - 9월 15일 | enum 타입에 대해서 복습하기,그리고 연관관계 맵핑에 대해서 공부하기|
+|9. board,Role 엔티티 추가 - 9월 16일 | enum 타입에 대해서 복습하기,그리고 연관관계 맵핑에 대해서 공부하기|
