@@ -8,8 +8,8 @@
 >   - [1. 스프링부트 프로젝트 설정하기 (.yml 야믈파일 설정)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/1%EB%B2%88)
 >   - [2. MySQL 서버와 관련된 yml파일 설정완료 및  Hello World 찍어보기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/2%EB%B2%88)
 >   - [3. DB에 집어넣을 엔티티 클래스 작성하기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/3%EB%B2%88)
->   - [4. MySQL 테이블 생성하기]()
->   - [5. CRUD 생성 및 테스트]()
+>   - [4. MySQL 테이블 생성하기](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/4%EB%B2%88/README.md)
+>   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
 >   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/5%EB%B2%88)
 
 |작성내용|비고|

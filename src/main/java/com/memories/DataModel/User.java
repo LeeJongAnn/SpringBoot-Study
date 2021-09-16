@@ -25,8 +25,15 @@ public class User {
     @Column(nullable = false,length = 64)
     private String email;
 
+
     public Timestamp getCreateTimestamp() {
         return createTimestamp;
+    }
+
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 
     public void setCreateTimestamp(Timestamp createTimestamp) {
