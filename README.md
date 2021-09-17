@@ -26,3 +26,4 @@
 |7. testController에서 jpa 테스트용 API 일부 작성 - 9월 14일 | 조회용 API 작성,DB 유저에 CreationTimestamp 어노테이션 추가해서 시간 표시 |
 |8. testController API테스트 및 작성 - 9월 15일 | save테스트 및 id로 select 테스트, 전체 조회 및 페이지 조회 테스트, update 테스트|
 |9. board,Role 엔티티 추가 - 9월 16일 | enum 타입에 대해서 복습하기,그리고 연관관계 맵핑에 대해서 공부하기|
+|10. User 클래스에 Role 추가 - 9월 17일 | User Role이 enum타입으로 USER와 ADMIN 둘 중 하나로 정하는데 USER로 정해서 POST 날리면 새로 생기는 데이터는 Role이 항상 USER로 들어감|
