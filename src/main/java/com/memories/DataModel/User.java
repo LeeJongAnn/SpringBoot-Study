@@ -16,14 +16,17 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false,length = 64)
+    @Column(nullable = false, length = 64)
     private String username;
 
-    @Column(nullable = false,length = 256)
+    @Column(nullable = false, length = 256)
     private String password;
 
-    @Column(nullable = false,length = 64)
+    @Column(nullable = false, length = 64)
     private String email;
+
+    @CreationTimestamp
+    private Timestamp createTimestamp;
 
 
     public Timestamp getCreateTimestamp() {
@@ -36,12 +39,21 @@ public class User {
         this.email = email;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     public void setCreateTimestamp(Timestamp createTimestamp) {
         this.createTimestamp = createTimestamp;
     }
 
-    @CreationTimestamp
-    private Timestamp createTimestamp;
 
     public int getId() {
         return id;

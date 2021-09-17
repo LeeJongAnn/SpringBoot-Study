@@ -1,6 +1,7 @@
 package com.memories.TestController;
 
 
+import com.memories.DataModel.Role;
 import com.memories.DataModel.User;
 import com.memories.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class testController {
         System.out.println("사용자이름:" + user.getUsername());
         System.out.println("사용자 비밀번호:" + user.getPassword());
         System.out.println("사용자 이메일:" + user.getEmail());
-
+        user.setRole(Role.USER);
         userRepository.save(user);
         return "저장되었습니다.";
     }
