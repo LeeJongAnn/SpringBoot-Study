@@ -10,7 +10,7 @@
 >   - [3. DB에 집어넣을 엔티티 클래스 작성하기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/3%EB%B2%88)
 >   - [4. MySQL 테이블 생성하기](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/4%EB%B2%88/README.md)
 >   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
->   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/5%EB%B2%88)
+>   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/6%EB%B2%88)
 >   - [7. 로그인,회원가입 기능 만들기]()
 
 |작성내용|비고|
