@@ -101,8 +101,12 @@ ID,Email,Password,username등등이 들어가 있는것을 확인할 수 있다.
     }
     }
 ***
-    
-    package com.memories.DataModel;
+
+- 위의 코드는 Getter Setter 메소드를 사용하고 있다. 그런데   
+아직 유저 클래스가 받는 파라미터의 값이 많지 않아서 Getter Setter를 써도   
+  상관이 없지만 만약 파라미터가 많은 경우에는 코드가 길어질 수 있다.   
+  그래서 어노테이션을 사용해서 코드를 줄여줬다.(@Data , @AllArgsConstructor)   
+  아래 코드는 수정 후 코드이다. 위와 다르게 확실하게 많이 줄어든 모습이다.
     
     
     import lombok.AllArgsConstructor;
