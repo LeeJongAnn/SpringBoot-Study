@@ -23,6 +23,10 @@ public class Board {
     @Column(nullable = false,length=64)
     private String title;
 
+    @JoinColumn(name = "UserId")
+    @ManyToOne
+    private User user;
+
     @Lob
     private String content;
 

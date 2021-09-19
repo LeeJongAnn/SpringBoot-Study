@@ -42,18 +42,19 @@ ID,Email,Password,username등등이 들어가 있는것을 확인할 수 있다.
 ### 다음 시간에는 테이블을 더 생성하고 테스트 해보는 작업을 진행해보겠다.
 
 ***
-`package com.memories.DataModel;
 
+    package com.memories.DataModel;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
-@Entity
-public class User {
-
+    
+    import lombok.AllArgsConstructor;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
+    
+    import javax.persistence.*;
+    
+    @Entity
+    public class User {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -98,6 +99,43 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-}
-`
+    }
 ***
+    
+    package com.memories.DataModel;
+    
+    
+    import lombok.AllArgsConstructor;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
+    import org.hibernate.annotations.CreationTimestamp;
+    
+    import javax.persistence.*;
+    import java.sql.Timestamp;
+    
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Data
+    @Entity
+    public class User {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    
+    @Column(nullable = false, length = 64)
+    private String username;
+    
+    @Column(nullable = false, length = 256)
+    private String password;
+    
+    @Column(nullable = false, length = 64)
+    private String email;
+    
+    @CreationTimestamp
+    private Timestamp createTimestamp;
+    
+    @Enumerated(EnumType.STRING)
+    private Role role;
+    
+    }
