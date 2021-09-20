@@ -15,7 +15,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.31.0.93:3306/upload?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/upload?serverTimezone=Asia/Seoul
     username: memories
     password: 1234
 
