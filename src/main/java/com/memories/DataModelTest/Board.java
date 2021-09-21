@@ -1,4 +1,4 @@
-package com.memories.DataModel;
+package com.memories.DataModelTest;
 
 
 import lombok.AllArgsConstructor;

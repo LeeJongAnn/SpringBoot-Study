@@ -1,4 +1,4 @@
-package com.memories.DataModel;
+package com.memories.DataModelTest;
 
 
 import lombok.AllArgsConstructor;
@@ -36,5 +36,9 @@ public class User {
     private Role role;
 
 
-
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
 }

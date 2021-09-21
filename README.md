@@ -12,6 +12,7 @@
 >   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
 >   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/6%EB%B2%88)
 >   - [7. 로그인,회원가입 기능 만들기]()
+>   - [8. 테스트 코드로 메소드 테스트하기]()
 
 |작성내용|비고|
 |------|---|
@@ -29,3 +30,4 @@
 |10. User 클래스에 Role 추가 - 9월 17일 | User Role이 enum타입으로 USER와 ADMIN 둘 중 하나로 정하는데 USER로 정해서 POST 날리면 새로 생기는 데이터는 Role이 항상 USER로 들어감|
 |11. 로그인 , 회원가입 화면 만든것 추가 - 9월 18일 | 컨텍스트 패스 때문에 애먹음 |
 |12. 코드 리팩토링 , User 클래스의 Getter Setter 제거 및 Board에 User 연관관계 추가 - 9월 19일 | @Data와 @AllArgsConstructor를 사용하면서 Getter Setter 제거 , ManyToOne 연관 관계 추가|
+|13. RestController에 대한 테스트 코드 작성 및 User 객체애 대한 테스트 코드 작성 - 9월 21일 | RestController의 테스트 코드는 통과했지만 User모델의 테스트 코드는 NullPointerExceptions 에러 발생(AllArgsConstructor에서는 Role타입이 걸려서 따로     생성자를 주었지만 맞지않고 테스트 실패)|

@@ -1,15 +1,14 @@
 package com.memories.TestController;
 
 
-import com.memories.DataModel.Role;
-import com.memories.DataModel.User;
+import com.memories.DataModelTest.Role;
+import com.memories.DataModelTest.User;
 import com.memories.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

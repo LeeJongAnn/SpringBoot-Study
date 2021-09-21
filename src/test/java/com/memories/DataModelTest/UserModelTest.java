@@ -1,0 +1,30 @@
+package com.memories.DataModelTest;
+
+
+import com.memories.Repository.UserRepository;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+public class UserModelTest {
+
+    @Autowired
+    private UserRepository userRepository;
+    
+    @Test
+    public void HaveNoFunTest(){
+        
+        User JongAnn = new User("미래는 두렵고 과거는 그립다","JongAnn123","JongAnn@naver.com");
+        User GogoUser = userRepository.save(JongAnn);
+
+        assertThat(GogoUser.getId()).isGreaterThan(0);
+    }
+
+}
