@@ -29,6 +29,7 @@
 |10. User 클래스에 Role 추가 - 9월 17일 | User Role이 enum타입으로 USER와 ADMIN 둘 중 하나로 정하는데 USER로 정해서 POST 날리면 새로 생기는 데이터는 Role이 항상 USER로 들어감|
 |11. 로그인 , 회원가입 화면 만든것 추가 - 9월 18일 | ~~컨텍스트 패스 때문에 애먹음~~ html에서는 풀경로로 적고,요청 날릴때는 컨텍스트 패스 제거해도 된다. |
 |12. 코드 리팩토링 , User 클래스의 Getter Setter 제거 및 Board에 User 연관관계 추가 - 9월 19일 | @Data와 @AllArgsConstructor를 사용하면서 Getter Setter 제거 , ManyToOne 연관 관계 추가|
-|13. RestController에 대한 테스트 코드 작성 및 User 객체애 대한 테스트 코드 작성 - 9월 21일 |~~테스트 코드는 통과했지만 User모델의 테스트 코드는 NullPointerExceptions 에러 발생(AllArgsConstructor에서는 Role타입이 걸려서 따로 생성자를 주었지만 맞지않고 테스트 실패)~~왜 됐는지 모르겠는데 됐음|
+|13. RestController에 대한 테스트 코드 작성 및 User 객체애 대한 테스트 코드 작성 - 9월 21일 |왜 됐는지 모르겠는데 됐음|
 |14. 회원가입 화면에서 받는 정보를 넘겨줄 save함수 작성 - 9월 21일 | jquery 점점 사장되고 있는데 공부해야 되는건가..? |
 |15. BoardController에 이동할 주소 맵핑함 - 9월 21일 | Controller 어노테이션을 안붙여서 페이지를 찾을 수 없는 황당한 실수를 함 |
+|16. 회원가입시 수행할 ajax 요청 작성 및 Reply 엔티티 클래스 추가 - 9월 23일 | Reply엔티티 클래스 연관관계 작성|
