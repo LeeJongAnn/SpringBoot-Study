@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BoardController {
 
     @GetMapping("/index")
-    public String index(){
+    public String index() {
 
         return "index";
     }
 
     @GetMapping("/user/login")
-    public String login(){
+    public String login() {
 
-        return "userLogin";
+        return "/user/userLogin";
 
     }
 
-    @GetMapping("/user/Join")
-    public String join(){
-        return "userJoin";
+    @GetMapping("/user/join")
+    public String join() {
+        return "/user/userJoin";
     }
 }

@@ -18,7 +18,7 @@ let index = {
         type:"POST",
         url:"/board/user/join",
         data:JSON.stringify(data),
-        contentType:"application/json"; charset:"utf-8",
+        contentType:"application/json; charset:utf-8",
         dataType:"json"
      }).done(function(resp){
         alert("회원가입이 완료되었습니다.")
