@@ -11,7 +11,7 @@
 >   - [4. MySQL 테이블 생성하기](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/4%EB%B2%88/README.md)
 >   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
 >   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/6%EB%B2%88)
->   - [7. 로그인,회원가입 기능 만들기]()
+>   - [7. 로그인,회원가입 기능 만들기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/7%EB%B2%88)
 
 |작성내용|비고|
 |------|---|
@@ -33,3 +33,4 @@
 |14. 회원가입 화면에서 받는 정보를 넘겨줄 save함수 작성 - 9월 21일 | jquery 점점 사장되고 있는데 공부해야 되는건가..? |
 |15. BoardController에 이동할 주소 맵핑함 - 9월 21일 | Controller 어노테이션을 안붙여서 페이지를 찾을 수 없는 황당한 실수를 함 |
 |16. 회원가입시 수행할 ajax 요청 작성 및 Reply 엔티티 클래스 추가 - 9월 23일 | Reply엔티티 클래스 연관관계 작성|
+|17. 회원가입시 실행될 Service 함수 작성 및 Dto 추가 - 9월 27일 | Reply엔티티 클래스 연관관계 작성|
