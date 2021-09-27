@@ -21,5 +21,6 @@
 </form>
 <button id="btn-save" class="btn btn-primary ml-3">회원가입 하기</button>
 
+
 <script src="/board/js/user.js"></script>
-<%@ include file="../layout/footer.jsp" %>	
+<%@ include file="../layout/footer.jsp" %>
