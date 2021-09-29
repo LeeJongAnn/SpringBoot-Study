@@ -34,4 +34,4 @@
 |15. BoardController에 이동할 주소 맵핑함 - 9월 21일 | Controller 어노테이션을 안붙여서 페이지를 찾을 수 없는 황당한 실수를 함 |
 |16. 회원가입시 수행할 ajax 요청 작성 및 Reply 엔티티 클래스 추가 - 9월 23일 | Reply엔티티 클래스 연관관계 작성|
 |17. 회원가입시 실행될 Service 함수 작성 및 Dto 추가 - 9월 27일 | 회원가입 클래스는 나중에 이후에 작성 예정|
-|17. Swagger-UI 추가 - 9월 29일 | API 문서화를 위한 swagger-UI 추가|
+|18. Swagger-UI 추가 - 9월 29일 | API 문서화를 위한 swagger-UI 추가|
