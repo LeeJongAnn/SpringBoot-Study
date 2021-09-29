@@ -1,4 +1,4 @@
-package com.memories.TestController;
+package com.memories.Controller;
 
 
 import org.springframework.stereotype.Controller;

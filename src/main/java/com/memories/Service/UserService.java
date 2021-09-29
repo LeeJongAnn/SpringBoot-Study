@@ -1,7 +1,7 @@
 package com.memories.Service;
 
 
-import com.memories.DataModelTest.User;
+import com.memories.DataModel.User;
 import com.memories.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
