@@ -24,4 +24,11 @@ public class UserService {
         }
         return -1;
     }
+
+
+    @Transactional(readOnly = true)
+    public User LoginUser(User user){
+       return userRepository.FindByUserNameAndPassword(user.getUsername(),user.getPassword());
+
+    }
 }
