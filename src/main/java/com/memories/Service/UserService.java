@@ -26,9 +26,9 @@ public class UserService {
     }
 
 
-//    @Transactional(readOnly = true)
-//    public User LoginUser(User user){
-//       return userRepository.FindByUserNameAndPassword(user.getUsername(),user.getPassword());
-//
-//    }
+    @Transactional(readOnly = true)
+    public User LoginUser(User user){
+       return userRepository.FindByUserNameAndPassword(user.getUsername(),user.getPassword());
+
+    }
 }
