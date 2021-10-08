@@ -12,6 +12,8 @@
 >   - [5. CRUD 생성 및 테스트](https://github.com/LeeJongAnn/SpringBoot-Study/blob/master/memory/5%EB%B2%88/README.md)
 >   - [6. 프론트 화면(메인,로그인,회원가입) 만들기(부트스트랩으로)](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/6%EB%B2%88)
 >   - [7. 로그인,회원가입 기능 만들기](https://github.com/LeeJongAnn/SpringBoot-Study/tree/master/memory/7%EB%B2%88)
+>   - [8. Spring Security 적용하기]()
+>   - [9. 글쓰기,수정,삭제,조회 만들기]()
 
 |작성내용|비고|
 |------|---|
@@ -35,3 +37,5 @@
 |16. 회원가입시 수행할 ajax 요청 작성 및 Reply 엔티티 클래스 추가 - 9월 23일 | Reply엔티티 클래스 연관관계 작성|
 |17. 회원가입시 실행될 Service 함수 작성 및 Dto 추가 - 9월 27일 | 회원가입 클래스는 나중에 이후에 작성 예정|
 |18. Swagger-UI 추가 - 9월 29일 | API 문서화를 위한 swagger-UI 추가|
+|19. Service에서 로그인 추가 - 10월 4일 | 로그인을 위한 JS파일 역시 수정 |
+|20. Security 적용 하기 위해서 설정 추가 및 기존에 있는 로그인 제거 - 10월 8일 | 시험기간임..  |

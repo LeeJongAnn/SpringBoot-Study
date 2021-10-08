@@ -14,7 +14,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.ArrayList;
 
 @SpringBootApplication
-@EnableSwagger2
 public class SpringboardApplication {
 
 	public static void main(String[] args) {
@@ -22,14 +21,6 @@ public class SpringboardApplication {
 	}
 
 
-	@Bean
-	public Docket swagger() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.select()
-				.apis(RequestHandlerSelectors.any())
-				.paths(PathSelectors.any())
-				.build();
-	}
 
 
 }
