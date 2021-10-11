@@ -28,7 +28,7 @@ let index = {
 
         $.ajax({
             type: "POST",
-            url:"/board/user/join",
+            url:"/user/join",
             data: JSON.stringify(data),
             contentType: "application/json; charset=utf-8",
             dataType:"json"
@@ -54,7 +54,7 @@ let index = {
     		 console.log(data)
              $.ajax({
                     type: "POST",
-                    url:"/board/user/login",
+                    url:"/user/login",
                     data: JSON.stringify(data),
                     contentType: "application/json; charset=utf-8",
                     dataType:"json"

@@ -17,5 +17,5 @@
 </form>
 <button type="submit" class="btn btn-primary ml-3">로그인하기</button>
 
-<script src="/board/js/user.js"></script>
+<script src="/js/user.js"></script>
 <%@ include file="../layout/footer.jsp" %>	
