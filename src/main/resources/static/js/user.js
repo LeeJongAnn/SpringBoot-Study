@@ -7,10 +7,10 @@ let index = {
 
 		});
 
-		$("#btn-login").on("click",()=>{
-            this.login()
-
-        });
+//		$("#btn-login").on("click",()=>{
+//            this.login()
+//
+//        });
 	},
 
 	save:function(){
@@ -42,29 +42,29 @@ let index = {
 
 
 
-    login:function(){
-
-    		let data = {
-
-    			username : $("#username").val(),
-    			password : $("#password").val(),
-
-    		}
-
-    		 console.log(data)
-             $.ajax({
-                    type: "POST",
-                    url:"/user/login",
-                    data: JSON.stringify(data),
-                    contentType: "application/json; charset=utf-8",
-                    dataType:"json"
-                }).done(function(res){
-                    alert("로그인이 완료되었습니다.")
-                    location.href = "/board"
-                }).fail(function(error){
-                    alert(JSON.stringify(error))
-                })
-        }
+//    login:function(){
+//
+//    		let data = {
+//
+//    			username : $("#username").val(),
+//    			password : $("#password").val(),
+//
+//    		}
+//
+//    		 console.log(data)
+//             $.ajax({
+//                    type: "POST",
+//                    url:"/user/login",
+//                    data: JSON.stringify(data),
+//                    contentType: "application/json; charset=utf-8",
+//                    dataType:"json"
+//                }).done(function(res){
+//                    alert("로그인이 완료되었습니다.")
+//                    location.href = "/board"
+//                }).fail(function(error){
+//                    alert(JSON.stringify(error))
+//                })
+//        }
 
 }
 
