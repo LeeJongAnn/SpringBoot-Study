@@ -15,7 +15,7 @@
   </div>
   
 </form>
-<button type="submit" class="btn btn-primary ml-3">로그인하기</button>
+<button id="btn-login" class="btn btn-primary">로그인</button>
 
 <script src="/js/user.js"></script>
 <%@ include file="../layout/footer.jsp" %>	
