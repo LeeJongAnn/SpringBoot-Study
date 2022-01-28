@@ -1,4 +1,4 @@
-package com.memories.Controller.Api;
+package com.memories.Controller;
 
 
 import com.memories.DataModel.Role;
