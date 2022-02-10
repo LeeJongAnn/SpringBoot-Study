@@ -1,26 +1,26 @@
 package com.memories.Controller;
 
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
-public class BoardController {
 
-    @GetMapping("/index")
+@Controller
+public class UserController {
+
+    @GetMapping("/")
     public String index() {
 
         return "index";
     }
 
-    @GetMapping("/user/login")
+    @GetMapping("/auth/login")
     public String login() {
 
         return "/user/userLogin";
 
     }
 
-    @GetMapping("/user/join")
+    @GetMapping("/auth/join")
     public String join() {
         return "/user/userJoin";
     }
