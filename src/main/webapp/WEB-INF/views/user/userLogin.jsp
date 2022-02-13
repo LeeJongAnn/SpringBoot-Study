@@ -3,7 +3,7 @@
 <%@ include file="../layout/header.jsp" %>
 
 
-<form action="#" method="post">
+<form action="/auth/loginProc" method="post">
   <div class="mb-3 ml-3 mt-3" style="max-width: 600px; margin-top: 0 auto;">
     <label for="username" class="form-label">Username</label>
     <input type="text" class="form-control" id="username" name ="username">
