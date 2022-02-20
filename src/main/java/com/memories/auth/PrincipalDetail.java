@@ -1,6 +1,7 @@
 package com.memories.auth;
 
 import com.memories.DataModel.User;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -8,6 +9,7 @@ import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Collection;
 
+@Getter
 public class PrincipalDetail implements UserDetails {
 
 

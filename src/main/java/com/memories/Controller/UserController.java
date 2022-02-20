@@ -26,4 +26,10 @@ public class UserController {
     public String join() {
         return "/user/userJoin";
     }
+
+    @GetMapping("/board/saveForm")
+    public String saveForm(){
+        return "/board/saveForm";
+    }
+
 }

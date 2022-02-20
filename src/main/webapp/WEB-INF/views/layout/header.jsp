@@ -26,7 +26,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
 crossorigin="anonymous"></script>
-
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <title>스프링으로 만드는 게시판</title>
 </head>
 <body>
@@ -57,10 +58,10 @@ crossorigin="anonymous"></script>
               <a class="nav-link active" aria-current="page" href="/">홈으로</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/user/boardForm">글쓰기</a>
+              <a class="nav-link" href="/board/saveForm">글쓰기</a>
             </li>
              <li class="nav-item">
-                          <a class="nav-link" href="/user/form">회원정보</a>
+                          <a class="nav-link" href="/user/updateForm">회원정보</a>
                         </li>
 
             <li class="nav-item">

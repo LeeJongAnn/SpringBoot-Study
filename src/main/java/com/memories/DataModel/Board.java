@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -19,13 +20,17 @@ public class Board {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    private int count;
 
     @Column(nullable = false,length=64)
     private String title;
 
     @JoinColumn(name = "UserId")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER )
     private User user;
+
+    @OneToMany(mappedBy = "board",fetch = FetchType.EAGER)
+    private List<Reply> reply;
 
     @Lob
     private String content;
