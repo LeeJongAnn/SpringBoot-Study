@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="layout/header.jsp" %>
 <div>
-<c:forEach var="board" items="${boards.content}">
+<c:forEach var="board" items="${boards}">
 	<div class="card m-2">
 		<div class="card-body">
 			<h4 class="card-title">${board.title}</h4>
