@@ -25,4 +25,9 @@ public class BoardService {
         boardRepository.save(board);
     }
 
+
+    public Iterable<Board> 글목록(){
+        return boardRepository.findAll();
+    }
+
 }

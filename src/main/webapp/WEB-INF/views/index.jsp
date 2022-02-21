@@ -1,33 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="layout/header.jsp" %>
-
-<div class="card ml-5 mt-5" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">제목</h5>
-    <p class="card-text">내용</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<div>
+<c:forEach var="board" items="${boards.content}">
+	<div class="card m-2">
+		<div class="card-body">
+			<h4 class="card-title">${board.title}</h4>
+			<a href="/board/${board.id}" class="btn btn-primary">상세보기</a>
+		</div>
+	</div>
+</c:forEach>
 </div>
-
-
-<div class="card ml-5 mt-5" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">제목</h5>
-    <p class="card-text">내용</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-
-<div class="card ml-5 mt-5" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">제목</h5>
-    <p class="card-text">내용</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
 
 <script src="/js/user.js"></script>
 <%@ include file="layout/footer.jsp" %>

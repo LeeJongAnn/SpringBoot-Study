@@ -1,17 +1,28 @@
 package com.memories.Controller;
 
+import com.memories.DataModel.Board;
+import com.memories.Service.BoardService;
 import com.memories.auth.PrincipalDetail;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
 
 
 @Controller
 public class UserController {
 
-    @GetMapping("/")
-    public String index(@AuthenticationPrincipal PrincipalDetail principal ) {
+    @Autowired
+    public BoardService boardService;
 
+    @GetMapping("/")
+    public String index(@AuthenticationPrincipal PrincipalDetail principal, Model model ) {
+        Iterable<Board> boardslist = boardService.글목록();
+        System.out.println(boardslist);
+        model.addAttribute("boards",boardslist);
         return "index";
     }
 
