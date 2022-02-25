@@ -2,7 +2,15 @@ let index = {
 		init: function(){
 			$("#btn-save").on("click", ()=>{
 				this.save();
-			});
+			}),
+			$("#btn-cancel1").on("click", ()=>{
+            				window.location="/"
+            			}),
+
+            $("#btn-cancel2").on("click", ()=>{
+                        				window.location="/"
+                        			});
+
 
 		},
 

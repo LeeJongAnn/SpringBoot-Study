@@ -20,7 +20,7 @@
   </div>
 </form>
 <button id="btn-save" class="btn btn-primary ml-3">회원가입 하기</button>
-
+<button id="btn-cancel2" class="btn btn-secondary text-center mb-3 ml-3 mt-3">취소</button>
 
 <script src="/js/user.js"></script>
 <%@ include file="../layout/footer.jsp" %>
