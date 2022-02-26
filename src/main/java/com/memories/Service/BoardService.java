@@ -30,4 +30,10 @@ public class BoardService {
         return boardRepository.findAll();
     }
 
+
+    @Transactional
+    public void 글삭제하기(int id) {
+        System.out.println("글삭제하기 : "+id);
+        boardRepository.deleteById(id);
+    }
 }
