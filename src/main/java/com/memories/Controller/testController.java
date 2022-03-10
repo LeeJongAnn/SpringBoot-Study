@@ -53,7 +53,6 @@ public class testController {
     @GetMapping("/dummy/paginUser")
     public Page<User> PaginUser(@PageableDefault(size = 1,sort = "id",direction = Sort.Direction.DESC)Pageable pageable){
 
-
         return userRepository.findAll(pageable);
 
     }

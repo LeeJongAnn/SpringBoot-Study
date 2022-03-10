@@ -7,6 +7,8 @@ import com.memories.DataModel.User;
 import com.memories.Repository.BoardRepository;
 import com.memories.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,8 +28,8 @@ public class BoardService {
     }
 
 
-    public Iterable<Board> 글목록(){
-        return boardRepository.findAll();
+    public Page<Board> 글목록(Pageable pageable){
+        return boardRepository.findAll(pageable);
     }
 
 

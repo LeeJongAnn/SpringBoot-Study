@@ -4,6 +4,10 @@ import com.memories.DataModel.Board;
 import com.memories.Service.BoardService;
 import com.memories.auth.PrincipalDetail;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,8 +23,8 @@ public class UserController {
     public BoardService boardService;
 
     @GetMapping("/")
-    public String index(@AuthenticationPrincipal PrincipalDetail principal, Model model ) {
-        Iterable<Board> boardslist = boardService.글목록();
+    public String index(@AuthenticationPrincipal PrincipalDetail principal, Model model, @PageableDefault(size=3,sort="id",direction = Sort.Direction.DESC) Pageable pageable) {
+        Page<Board> boardslist = boardService.글목록(pageable);
         System.out.println(boardslist);
         model.addAttribute("boards",boardslist);
         return "index";
