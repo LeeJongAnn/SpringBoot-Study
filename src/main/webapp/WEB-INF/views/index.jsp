@@ -21,7 +21,6 @@
 </table>
   <ul class="pagination justify-content-center">
     <li class="page-item"><a class="page-link" href="?page=${boards.number-1}">Previous</a></li>
-    <c:forEach items="${boards.number}" var="i"><li class="page-item"><a class="page-link" href="?page=${i}">${i}</a></li></c:forEach>
     <li class="page-item"><a class="page-link" href="?page=${boards.number+1}">Next</a></li>
   </ul>
 <div class="text-center" style="position: absolute; left: 25%; width: 700px">
