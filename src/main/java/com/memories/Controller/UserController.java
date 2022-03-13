@@ -31,10 +31,8 @@ public class UserController {
     @GetMapping("/")
     public String index(@AuthenticationPrincipal PrincipalDetail principal, Model model, @PageableDefault(size=3,sort="id",direction = Sort.Direction.DESC) Pageable pageable) {
         Page<Board> boardslist = boardService.글목록(pageable);
-        List<Board> listAll = boardslist.getContent();
         System.out.println(boardslist);
         model.addAttribute("boards",boardslist);
-        model.addAttribute("listAll",listAll);
         return "index";
     }
 
