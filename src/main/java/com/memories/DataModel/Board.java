@@ -40,4 +40,16 @@ public class Board {
     @CreationTimestamp
     private Timestamp timestamp;
 
+    @Override
+    public String toString() {
+        return "Board{" +
+                "id=" + id +
+                ", count=" + count +
+                ", title='" + title + '\'' +
+                ", user=" + user +
+                ", reply=" + reply +
+                ", content='" + content + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
+    }
 }
