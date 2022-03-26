@@ -3,7 +3,7 @@
 <%@ include file="../layout/header.jsp" %>
 
 
-<form action="/auth/loginProc" method="post">
+<form action="/auth/loginProc" style="width:600px; margin: 0 auto;" method="post">
   <div class="mb-3 ml-3 mt-3" style="max-width: 600px; margin-top: 0 auto;">
     <label for="username" class="form-label">Username</label>
     <input type="text" class="form-control" id="username" name ="username">
@@ -13,9 +13,9 @@
     <label for="password" class="form-label">Password</label>
     <input type="password" class="form-control" id="password" name="password">
   </div>
-  
 <button id="btn-login" class="btn btn-primary text-center mb-3 ml-3 mt-3">로그인</button>
+<button id="btn-cancel1" class="btn btn-secondary mb-3 ml-3 mt-3">취소</button>
+
 </form>
-<button id="btn-cancel1" style="position:absolute; left:135px; bottom:330px;" class="btn btn-secondary mb-3 ml-3 mt-3">취소</button>
 <script src="/js/user.js"></script>
 <%@ include file="../layout/footer.jsp" %>

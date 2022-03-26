@@ -22,38 +22,13 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    @Autowired
-    public BoardService boardService;
-
-    @Autowired
-    public BoardRepository boardRepository;
-
-    @GetMapping("/")
-    public String index(@AuthenticationPrincipal PrincipalDetail principal, Model model, @PageableDefault(size=3,sort="id",direction = Sort.Direction.DESC) Pageable pageable) {
-        Page<Board> boardslist = boardService.글목록(pageable);
-        System.out.println(boardslist);
-        model.addAttribute("boards",boardslist);
-        return "index";
-    }
-
-    @GetMapping("/board/{id}/updateForm")
-    public String updateForm(@PathVariable int id, Model model) {
-        model.addAttribute("board", boardService.글상세보기(id));
-        return "board/updateForm";
-    }
-
-    @GetMapping("/board/{id}")
-    public String findById(@PathVariable int id, Model model) {
-        model.addAttribute("board", boardService.글상세보기(id));
-        return "board/detail";
-    }
-
-
     @GetMapping("/auth/login")
     public String login() {
-
         return "/user/userLogin";
-
+    }
+    @GetMapping("/user/updateForm")
+    public String updateForm() {
+        return "user/updateForm";
     }
 
     @GetMapping("/auth/join")
@@ -61,9 +36,6 @@ public class UserController {
         return "/user/userJoin";
     }
 
-    @GetMapping("/board/saveForm")
-    public String saveForm(){
-        return "/board/saveForm";
-    }
+
 
 }
