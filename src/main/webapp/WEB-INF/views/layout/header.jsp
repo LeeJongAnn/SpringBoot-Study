@@ -67,6 +67,8 @@ crossorigin="anonymous"></script>
             <li class="nav-item">
               <a class="nav-link" href="/logout">로그아웃</a>
             </li>
+
+
         </c:otherwise>
       </c:choose>
         <li class="nav-item dropdown">
@@ -80,8 +82,8 @@ crossorigin="anonymous"></script>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+           <li class="nav-item">
+           <a class="nav-link">${principal.user.username}님 환영합니다</a>
         </li>
       </ul>
     </div>
