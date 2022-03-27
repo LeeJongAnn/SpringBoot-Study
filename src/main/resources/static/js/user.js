@@ -3,6 +3,10 @@ let index = {
 			$("#btn-save").on("click", ()=>{
 				this.save();
 			}),
+
+			$("#btn-update").on("click", ()=>{
+            				this.update();
+            			}),
 			$("#btn-cancel1").on("click", ()=>{
             				window.location="/"
             			}),
