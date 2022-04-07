@@ -2,6 +2,7 @@ package com.memories.Controller;
 
 import com.memories.DataModel.Board;
 import com.memories.Repository.BoardRepository;
+import com.memories.Repository.ReplyRepository;
 import com.memories.Service.BoardService;
 import com.memories.auth.PrincipalDetail;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,9 @@ public class BoardController {
 
     @Autowired
     public BoardRepository boardRepository;
+
+    @Autowired
+    public ReplyRepository replyRepository;
 
 
     @GetMapping("/")
