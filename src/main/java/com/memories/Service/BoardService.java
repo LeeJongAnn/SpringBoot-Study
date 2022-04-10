@@ -2,9 +2,11 @@ package com.memories.Service;
 
 
 import com.memories.DataModel.Board;
+import com.memories.DataModel.Reply;
 import com.memories.DataModel.Role;
 import com.memories.DataModel.User;
 import com.memories.Repository.BoardRepository;
+import com.memories.Repository.ReplyRepository;
 import com.memories.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,6 +21,9 @@ public class BoardService {
 
     @Autowired
     private BoardRepository boardRepository;
+
+    @Autowired
+    private ReplyRepository replyRepository;
 
     @Transactional
     public void 글쓰기(Board board, User user) {
@@ -54,5 +59,18 @@ public class BoardService {
         boardRepository.deleteById(id);
     }
 
+
+    @Transactional
+    public void 댓글쓰기(User user, int boardId, Reply requestReply) {
+
+        Board board = boardRepository.findById(boardId).orElseThrow(()->{
+            return new IllegalArgumentException("댓글 쓰기 실패 : 게시글 id를 찾을 수 없습니다.");
+        }); // 영속화 완료;
+
+        requestReply.setUser(user);
+        requestReply.setBoard(board);
+
+        replyRepository.save(requestReply);
+    }
 
 }

@@ -19,9 +19,6 @@ public class Reply {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false,length = 128)
-    private String title;
-
     @Column(nullable = false,length = 500)
     private String content;
 
@@ -32,6 +29,7 @@ public class Reply {
     @ManyToOne
     @JoinColumn(name = "BoardId")
     private Board board;
+
 
 
 }

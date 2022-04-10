@@ -1,6 +1,7 @@
 package com.memories.DataModel;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -32,7 +33,8 @@ public class Board {
     private User user;
 
     @OneToMany(mappedBy = "board",fetch = FetchType.EAGER)
-    private List<Reply> reply;
+    @JsonIgnoreProperties({"board"})
+    private List<Reply> replys;
 
     @Lob
     private String content;
@@ -47,7 +49,7 @@ public class Board {
                 ", count=" + count +
                 ", title='" + title + '\'' +
                 ", user=" + user +
-                ", reply=" + reply +
+                ", replys=" + replys +
                 ", content='" + content + '\'' +
                 ", timestamp=" + timestamp +
                 '}';
